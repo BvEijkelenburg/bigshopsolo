@@ -2,12 +2,13 @@ package nl.hu.bep.shopping.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-public class Shopper implements NamedObject {
+public class Shopper implements NamedObject, Principal {
     private String name;
     private String password;
     private String role;
